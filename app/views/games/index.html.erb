@@ -1,0 +1,12 @@
+<% @games.each do |game| %>
+    <div class="game-card">
+    <p>
+    <%= game.title %>
+    -
+    <%= link_to("edit", game_tweet_path(game.id))%>
+    -
+    <%= link_to("delete", game_path(game.id), method: :delete, data: {confirm: "Are you really sure you want to delete this game?"}) %>
+    </p>
+    <date><%= game.created_at.to_s(:short) %></date>
+    </div>
+<% end %>
