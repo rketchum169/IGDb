@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+ .game-card {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.game-card date {
+    color: #00d9ff;
+}
+
+nav {
+    background-color: dimgrey;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
