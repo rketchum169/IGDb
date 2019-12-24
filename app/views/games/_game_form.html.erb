@@ -3,11 +3,11 @@
 <%= form_thing.text_area(:title) %>
 -
 <%= form_thing.label(:release_date) %>
-<%= form_thing.time(:release_date) %>
+<%= form_thing.date_field(:release_date) %>
 -
 <%= form_thing.label(:rating) %>
-<%= form_thing.text_area(:rating).to_f %>
+<%= form_thing.number_field(:rating, in: 0.0..10.0, step: 0.1) %>
 -
 <%= form_thing.label(:console) %>
-<%= form_thing.text_area(:body) %>
+<%= form_thing.select(:console, options_for_select([['Xbox', 1], ['Playstation', 2], ['Nintendo', 3], ['PC', 3]])) %>
 </p>
