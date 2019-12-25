@@ -1,6 +1,6 @@
 require "faker"
 
-10.times do |number|
+100.times do |number|
     Game.create({
         title: Faker::Game.title,
         release_date: Faker::Date.between(from: 20.years.ago, to:Date.today),

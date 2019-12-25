@@ -4,6 +4,10 @@ class GamesController < ApplicationController
         @games = Game.all.order(id: :desc)
     end
 
+    def show
+        @game = Game.find(params[:id])
+    end
+
     def new
        @game = Game.new
     end
