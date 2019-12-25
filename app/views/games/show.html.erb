@@ -8,4 +8,6 @@
 <br>
 <%= game.rating %>
 <br>
-<%= link_to("Back", games_path) %>
+<li><%= link_to("Back", :back) %></li>
+<li><%= link_to("edit", edit_game_path(game.id))%></li>
+<li><%= link_to("delete", game_path(game.id), method: :delete, data: {confirm: "Are you really sure you want to delete this game?"}) %></li>

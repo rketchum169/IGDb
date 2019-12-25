@@ -44,7 +44,7 @@ class GamesController < ApplicationController
     private
     #strong_params
     def game_params
-        params.require(:game).permit(:title)
+        params.require(:game).permit(:title, :release_date, :rating, :console)
     end
 
 
